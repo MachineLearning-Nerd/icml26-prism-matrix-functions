@@ -1,0 +1,20 @@
+{
+  "claim": 1,
+  "route": "independent dense reconstruction",
+  "exact_mechanism": "X_next = X(I + R/2 + alpha R^2), R=I-X^T X",
+  "conditions": {
+    "gaussian_aspect_ratios": [1, 4, 50],
+    "htmp_kappa": [0.1, 0.5, 100],
+    "seeds": [202601, 202602, 202603],
+    "iterations": 8,
+    "sketch_dimension": 64
+  },
+  "checks": [
+    "Direct dense bounded minimization agrees with an independently coded singular-value quartic solution to 1e-7.",
+    "Direct dense Frobenius residual agrees with the singular-value residual to 1e-7.",
+    "Exact and randomized-sketch alpha profiles each vary across at least four samples.",
+    "Every sketched trajectory reduces its dense residual.",
+    "A fixed alpha=3/8 negative control is rejected."
+  ],
+  "failure_behavior": "Any equivalence, adaptation, improvement, or control failure exits nonzero."
+}

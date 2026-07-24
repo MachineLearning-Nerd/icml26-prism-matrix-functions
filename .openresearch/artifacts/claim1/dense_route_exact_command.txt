@@ -1,0 +1,6 @@
+uv run --frozen --python 3.11 python repro/src/run_reproduction.py
+
+Planned backend: Hugging Face cpu-upgrade
+Estimated useful cores before launch: 6
+Reason: eighteen dense matrix trajectories with uncertain runtime
+Environment: unchanged committed pyproject.toml and uv.lock
