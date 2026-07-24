@@ -63,6 +63,19 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    training_closure = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/training_claims_closure.py")]
+    )
+    training_closure_checker = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/check_training_claims_closure.py")]
+    )
+    training_closure_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/training_claims_closure.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -72,6 +85,9 @@ def main() -> int:
         and spectral_negative.returncode != 0
         and dense.returncode == 0
         and dense_negative.returncode != 0
+        and training_closure.returncode == 0
+        and training_closure_checker.returncode == 0
+        and training_closure_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -95,6 +111,12 @@ def main() -> int:
         "dense_verifier_exit_code": dense.returncode,
         "dense_negative_control_exit_code": dense_negative.returncode,
         "dense_negative_control_failed_as_intended": dense_negative.returncode != 0,
+        "training_closure_exit_code": training_closure.returncode,
+        "training_closure_checker_exit_code": training_closure_checker.returncode,
+        "training_closure_negative_control_exit_code": training_closure_negative.returncode,
+        "training_closure_negative_control_failed_as_intended": (
+            training_closure_negative.returncode != 0
+        ),
         "cumulative_suite_passed": suite_ok,
     }
     print("RUN_METADATA=" + json.dumps(metadata, sort_keys=True), flush=True)
