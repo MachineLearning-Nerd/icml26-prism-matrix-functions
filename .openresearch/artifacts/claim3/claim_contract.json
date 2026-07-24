@@ -1,0 +1,21 @@
+{
+  "claim_id": 3,
+  "source": {
+    "paper": "arXiv:2601.22137v1",
+    "statement_anchor": "Thmtheorem2",
+    "proof_anchor": "A2.SS3",
+    "html_sha256": "9876b930c97063af87fbfc8eb51e577920d2047d76abd4f71c1f63570b9a4866"
+  },
+  "quantifier": "For every stated-domain A, with probability at least 1-delta over the independent Gaussian sketches.",
+  "assumptions": [
+    "A is real and square",
+    "0 < ||A||_2 <= 1",
+    "A^2 is symmetric",
+    "sketch entries are i.i.d. N(1,1/p) as printed",
+    "p >= 48(log n + log(1/delta) + log k + 27.6)",
+    "d = 1 and alpha is the sketched residual minimizer over [1/2,1]"
+  ],
+  "conclusion": "Convergence to sign(A) and ||I-X_k^2||_2 <= ||I-A^2||_2^(2^(k-3)) with probability at least 1-delta.",
+  "resolution_rule": "FALSIFIED iff one stated-domain matrix makes the claimed probabilistic bound fail with probability greater than delta.",
+  "verdict": "FALSIFIED"
+}

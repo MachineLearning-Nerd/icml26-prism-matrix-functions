@@ -1,0 +1,10 @@
+{
+  "claim": 2,
+  "verdict": "FALSIFIED",
+  "source_anchor": "Thmtheorem1",
+  "counterexample": [[0, -1], [1, 0]],
+  "residual_norms": [2, 5, 50, 33125],
+  "checked_k": 2,
+  "actual": 50,
+  "claimed_bound": 2
+}

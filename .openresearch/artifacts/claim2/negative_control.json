@@ -1,0 +1,13 @@
+{
+  "schema": "prism-counterexample-input-v1",
+  "matrix_A": [[1, 0], [0, -1]],
+  "theorem_2_parameters": {
+    "n": 2,
+    "delta": 0.1,
+    "k": 3
+  },
+  "alpha_interval": ["1/2", "1"],
+  "arithmetic": "exact rational",
+  "seed": null,
+  "expected": "checker rejects because this matrix has zero residual and does not contradict either theorem"
+}

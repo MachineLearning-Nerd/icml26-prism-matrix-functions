@@ -1,0 +1,13 @@
+{
+  "claim": 3,
+  "verdict": "FALSIFIED",
+  "statement_anchor": "Thmtheorem2",
+  "proof_anchor": "A2.SS3",
+  "n": 2,
+  "delta": 0.1,
+  "k": 3,
+  "printed_p_min": 1522,
+  "actual": 33125,
+  "claimed_bound": 2,
+  "failure_probability": 1
+}

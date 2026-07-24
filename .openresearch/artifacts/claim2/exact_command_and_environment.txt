@@ -1,0 +1,9 @@
+FIXED_COMMAND=uv run --frozen --python 3.11 python repro/src/run_reproduction.py
+PYTHON_CONSTRAINT=>=3.11,<3.12
+LOCKFILE=uv.lock
+BACKEND=hf
+FLAVOR=cpu-upgrade
+IMAGE=ghcr.io/astral-sh/uv:python3.11-bookworm-slim
+ESTIMATED_USEFUL_CORES=1
+GPU_USED=false
+SEED=none

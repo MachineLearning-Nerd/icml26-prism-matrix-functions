@@ -1,0 +1,20 @@
+{
+  "claim_id": 2,
+  "source": {
+    "paper": "arXiv:2601.22137v1",
+    "anchor": "Thmtheorem1",
+    "html_sha256": "9876b930c97063af87fbfc8eb51e577920d2047d76abd4f71c1f63570b9a4866"
+  },
+  "quantifier": "For every real n x n A satisfying the stated assumptions, the generated sequence has the stated convergence and bound.",
+  "assumptions": [
+    "A is real and square",
+    "0 < ||A||_2 <= 1",
+    "A^2 is symmetric",
+    "X_0 = A",
+    "d = 1",
+    "alpha_k is the exact residual-Frobenius minimizer over [1/2, 1]"
+  ],
+  "conclusion": "X_k converges to sign(A) and ||I-X_k^2||_2 <= ||I-A^2||_2^(2^(k-2)).",
+  "resolution_rule": "FALSIFIED iff one matrix satisfies every printed assumption and an exact iterate violates the bound.",
+  "verdict": "FALSIFIED"
+}

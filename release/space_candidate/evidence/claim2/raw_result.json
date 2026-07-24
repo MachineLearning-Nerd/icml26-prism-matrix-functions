@@ -1,0 +1,8 @@
+{
+  "matrix_A": [[0, -1], [1, 0]],
+  "A_squared": [[-1, 0], [0, -1]],
+  "spectral_norm_A": 1,
+  "residual_norms": [2, 5, 50, 33125],
+  "theorem_1": {"k": 2, "actual": 50, "bound": 2, "verdict": "FALSIFIED"},
+  "theorem_2": {"k": 3, "actual": 33125, "bound": 2, "failure_probability": 1, "delta": 0.1, "verdict": "FALSIFIED"}
+}
