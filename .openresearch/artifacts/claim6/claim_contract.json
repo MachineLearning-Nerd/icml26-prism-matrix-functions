@@ -1,0 +1,24 @@
+{
+  "claim": 6,
+  "paper_anchor": "Section 6.1 Figures 3-4; Appendix D Figures D.1-D.2",
+  "exact_statement_under_test": "On the six paper conditions (Gaussian aspect ratios n/m in {1,4,50} and HTMP kappa in {0.1,0.5,100}), fifth-order PRISM has stable residual convergence while the fixed-interval PolarExpress control degrades.",
+  "matrix_conditions": [
+    {"family": "gaussian", "n": 15000, "m": 15000, "parameter": 1},
+    {"family": "gaussian", "n": 20000, "m": 5000, "parameter": 4},
+    {"family": "gaussian", "n": 100000, "m": 2000, "parameter": 50},
+    {"family": "htmp", "n": 8000, "m": 4000, "parameter": 0.1},
+    {"family": "htmp", "n": 8000, "m": 4000, "parameter": 0.5},
+    {"family": "htmp", "n": 8000, "m": 4000, "parameter": 100}
+  ],
+  "predeclared_seeds": [202601, 202602, 202603],
+  "predeclared_horizon": 24,
+  "predeclared_rms_residual_thresholds": [0.1, 0.01, 0.001],
+  "scoped_alignment_rule": [
+    "PRISM reaches RMS residual 0.01 in every condition and seed.",
+    "PRISM is no slower than PolarExpress for every paired condition and seed.",
+    "PolarExpress either misses the threshold or has a larger first-hit range than PRISM."
+  ],
+  "uncertainty": "Report mean, sample standard deviation, and full first-hit distribution across 18 samples.",
+  "negative_control": "The literal HTMP off-diagonal printed by the cited generator must violate the PSD invariant and exit nonzero.",
+  "failure_behavior": "Data integrity or optimizer-fit failures exit nonzero; scientific alignment is reported from the predeclared rule without being forced."
+}

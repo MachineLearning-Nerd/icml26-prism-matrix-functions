@@ -43,18 +43,30 @@ def main() -> int:
             str(ROOT / ".openresearch/artifacts/claim2/negative_control.json"),
         ]
     )
+    spectral = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/spectral_prism.py")]
+    )
+    spectral_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/spectral_prism.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
         and independent.returncode == 0
         and negative.returncode != 0
+        and spectral.returncode == 0
+        and spectral_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
-        "backend_policy": "local for bounded single-core tasks under 5 minutes",
-        "estimated_cores_before_launch": 1,
-        "selected_backend": "local",
-        "selected_flavor": None,
+        "backend_policy": "HF cpu-upgrade for a six-worker uncertain-runtime CPU experiment",
+        "estimated_cores_before_launch": 6,
+        "selected_backend": "hf",
+        "selected_flavor": "cpu-upgrade",
         "actual_logical_cpu_allocation": os.cpu_count(),
         "platform": platform.platform(),
         "python": platform.python_version(),
@@ -64,6 +76,10 @@ def main() -> int:
         "independent_checker_exit_code": independent.returncode,
         "negative_control_exit_code": negative.returncode,
         "negative_control_failed_as_intended": negative.returncode != 0,
+        "spectral_verifier_exit_code": spectral.returncode,
+        "spectral_negative_control_exit_code": spectral_negative.returncode,
+        "spectral_negative_control_failed_as_intended": spectral_negative.returncode
+        != 0,
         "cumulative_suite_passed": suite_ok,
     }
     print("RUN_METADATA=" + json.dumps(metadata, sort_keys=True), flush=True)
