@@ -69,6 +69,9 @@ Fixed command:
 uv run --frozen --python 3.11 python repro/src/run_reproduction.py
 ```
 
+Compute estimate: one CPU core and under five minutes; selected backend:
+local CPU, with no GPU and no remote flavor.
+
 ## Verdict and limitation
 
 - Claim 2: **FALSIFIED**

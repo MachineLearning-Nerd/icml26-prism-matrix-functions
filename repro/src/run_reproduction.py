@@ -51,9 +51,10 @@ def main() -> int:
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
-        "backend_policy": "hf/cpu-upgrade for uncertain or >5 minute tasks",
+        "backend_policy": "local for bounded single-core tasks under 5 minutes",
         "estimated_cores_before_launch": 1,
-        "selected_flavor": "cpu-upgrade",
+        "selected_backend": "local",
+        "selected_flavor": None,
         "actual_logical_cpu_allocation": os.cpu_count(),
         "platform": platform.platform(),
         "python": platform.python_version(),
