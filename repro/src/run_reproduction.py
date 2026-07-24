@@ -53,6 +53,16 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    htmp_density = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/htmp_limiting_density.py")]
+    )
+    htmp_density_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/htmp_limiting_density.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -60,6 +70,8 @@ def main() -> int:
         and negative.returncode != 0
         and spectral.returncode == 0
         and spectral_negative.returncode != 0
+        and htmp_density.returncode == 0
+        and htmp_density_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -80,6 +92,11 @@ def main() -> int:
         "spectral_negative_control_exit_code": spectral_negative.returncode,
         "spectral_negative_control_failed_as_intended": spectral_negative.returncode
         != 0,
+        "htmp_density_exit_code": htmp_density.returncode,
+        "htmp_density_negative_control_exit_code": htmp_density_negative.returncode,
+        "htmp_density_negative_control_failed_as_intended": (
+            htmp_density_negative.returncode != 0
+        ),
         "cumulative_suite_passed": suite_ok,
     }
     print("RUN_METADATA=" + json.dumps(metadata, sort_keys=True), flush=True)
