@@ -53,6 +53,16 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    dense = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/dense_prism_certificate.py")]
+    )
+    dense_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/dense_prism_certificate.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -60,6 +70,8 @@ def main() -> int:
         and negative.returncode != 0
         and spectral.returncode == 0
         and spectral_negative.returncode != 0
+        and dense.returncode == 0
+        and dense_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -80,6 +92,9 @@ def main() -> int:
         "spectral_negative_control_exit_code": spectral_negative.returncode,
         "spectral_negative_control_failed_as_intended": spectral_negative.returncode
         != 0,
+        "dense_verifier_exit_code": dense.returncode,
+        "dense_negative_control_exit_code": dense_negative.returncode,
+        "dense_negative_control_failed_as_intended": dense_negative.returncode != 0,
         "cumulative_suite_passed": suite_ok,
     }
     print("RUN_METADATA=" + json.dumps(metadata, sort_keys=True), flush=True)
