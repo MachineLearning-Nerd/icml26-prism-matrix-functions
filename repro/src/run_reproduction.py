@@ -63,6 +63,16 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    archive_audit = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/audit_arxiv_reproducibility.py")]
+    )
+    archive_audit_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/audit_arxiv_reproducibility.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -72,6 +82,8 @@ def main() -> int:
         and spectral_negative.returncode != 0
         and dense.returncode == 0
         and dense_negative.returncode != 0
+        and archive_audit.returncode == 0
+        and archive_audit_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -95,6 +107,11 @@ def main() -> int:
         "dense_verifier_exit_code": dense.returncode,
         "dense_negative_control_exit_code": dense_negative.returncode,
         "dense_negative_control_failed_as_intended": dense_negative.returncode != 0,
+        "archive_audit_exit_code": archive_audit.returncode,
+        "archive_audit_negative_control_exit_code": archive_audit_negative.returncode,
+        "archive_audit_negative_control_failed_as_intended": (
+            archive_audit_negative.returncode != 0
+        ),
         "cumulative_suite_passed": suite_ok,
     }
     print("RUN_METADATA=" + json.dumps(metadata, sort_keys=True), flush=True)

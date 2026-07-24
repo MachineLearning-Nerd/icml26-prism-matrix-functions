@@ -1,0 +1,15 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 6,
+  "route": "exact arXiv source archive audit",
+  "source_url": "https://export.arxiv.org/e-print/2601.22137",
+  "required": [
+    "generator or experiment executable",
+    "machine-readable raw curve data",
+    "random seed",
+    "numerical precision",
+    "all four Figure D.2 plot files"
+  ],
+  "acceptance": "Every operational input must be present in the exact public source archive.",
+  "failure": "Missing code, data, or seed blocks exact rerun; figures and prose may not substitute for operational evidence."
+}
