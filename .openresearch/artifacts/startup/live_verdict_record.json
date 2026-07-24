@@ -1,0 +1,27 @@
+{
+  "dataset": "ICML-2026-agent-repro/verdicts",
+  "dataset_revision": "931fcb7e913f2b523f96edb1adcb43ffa5ea2946",
+  "dataset_file_sha256": "6f8c2a6ae163a75704552d8085d9378e0320f8d9f365b8bfe283c2e5ed3085c0",
+  "retrieved_at": "2026-07-24T14:51:30Z",
+  "filter": {
+    "field": "space_id",
+    "operator": "exact equality",
+    "value": "DineshAI/hwhvjhXC0m"
+  },
+  "match_count": 1,
+  "record": {
+    "space_id": "DineshAI/hwhvjhXC0m",
+    "orid": "hwhvjhXC0m",
+    "paper_title": "PRISM: Distribution-free Adaptive Computation of Matrix Functions for Accelerating Neural Network Training",
+    "sha": "60c5a76c9e844e9e6d247ab9066371127f1e123f",
+    "judged_at": "2026-07-23T21:18:37+00:00",
+    "model": "zai-org/GLM-5.2",
+    "claim_verdicts": ["toy", "toy", "toy", "toy", "inconclusive", "toy"],
+    "score": {
+      "earned": 5,
+      "possible": 12
+    },
+    "quality": "low",
+    "overall": "This logbook runs a trivial 6×6 numpy script that does not reproduce any of the paper's experiments at meaningful scale. Most claims are addressed with crude proxies or not at all; the self-reported '6/6 PASS at full scale' is demonstrably false."
+  }
+}
