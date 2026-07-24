@@ -1,0 +1,14 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 6,
+  "route": "mandatory falsification",
+  "exact_quantifier": "the particular unpublished experiments",
+  "required_for_falsification": [
+    "satisfy every stated experimental assumption",
+    "contradict the exact source statement",
+    "independent analytical checker",
+    "negative control rejected for an assumption violation"
+  ],
+  "result": "BLOCKED",
+  "unblocker": "public generator plus exact seed/raw matrix and timing protocol, or a genuinely universal source claim"
+}
