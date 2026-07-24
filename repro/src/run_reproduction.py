@@ -53,6 +53,9 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    htmp_calibration = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/htmp_calibration.py")]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -60,6 +63,7 @@ def main() -> int:
         and negative.returncode != 0
         and spectral.returncode == 0
         and spectral_negative.returncode != 0
+        and htmp_calibration.returncode == 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -80,6 +84,7 @@ def main() -> int:
         "spectral_negative_control_exit_code": spectral_negative.returncode,
         "spectral_negative_control_failed_as_intended": spectral_negative.returncode
         != 0,
+        "htmp_calibration_exit_code": htmp_calibration.returncode,
         "cumulative_suite_passed": suite_ok,
     }
     print("RUN_METADATA=" + json.dumps(metadata, sort_keys=True), flush=True)

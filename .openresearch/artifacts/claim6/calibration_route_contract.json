@@ -1,0 +1,23 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 6,
+  "route": "finite HTMP sampler parameter calibration",
+  "paper_dimensions": [8000, 4000],
+  "kappas": [0.1, 0.5, 100.0],
+  "seed": 202601,
+  "horizon": 32,
+  "fixed_before_evaluation": {
+    "first_hit_fro_1e-2": {
+      "0.1": [17, 19],
+      "0.5": [17, 19],
+      "100.0": [7, 9]
+    },
+    "first_hit_fro_1e-4": {
+      "0.1": [18, 20],
+      "0.5": [18, 20],
+      "100.0": [7, 10]
+    }
+  },
+  "acceptance": "One defensible parameter interpretation must satisfy every first-hit bracket at all three kappas.",
+  "failure": "If none does, this route rejects the available finite-sampler interpretations and must not be used as Claim 6 verification."
+}
