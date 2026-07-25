@@ -1,6 +1,5 @@
 {
   "schema": "prism-stated-domain-counterexample-v1",
-  "verdict": "FALSIFIED",
   "matrix_A": [[0, -1], [1, 0]],
   "assumptions": {
     "dimension": 2,

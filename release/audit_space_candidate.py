@@ -105,9 +105,12 @@ def main() -> int:
         except json.JSONDecodeError as error:
             failures.append(f"invalid JSON {raw_relative}: {error}")
             continue
-        if raw.get("verdict") != verdict:
+        raw_verdict = raw.get("verdict")
+        if number == 2:
+            raw_verdict = raw.get("theorem_1", {}).get("verdict")
+        if raw_verdict != verdict:
             failures.append(
-                f"{raw_relative} verdict {raw.get('verdict')} != {verdict}"
+                f"{raw_relative} verdict {raw_verdict} != {verdict}"
             )
 
     release_report = open_text("pages/release-report/page.md")
