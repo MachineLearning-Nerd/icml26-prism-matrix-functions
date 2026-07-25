@@ -1,0 +1,56 @@
+{
+  "judged_revision": "60c5a76c9e844e9e6d247ab9066371127f1e123f",
+  "note": "Canonical navigation files are intentionally overlaid to expose the current verifier; their exact judged bytes are preserved under historical/judged-60c5a76.",
+  "old_file_count": 17,
+  "old_file_set_subset_of_candidate": true,
+  "old_paths": [
+    ".gitattributes",
+    "README.md",
+    "bucket-icon.svg",
+    "index.html",
+    "logbook.css",
+    "logbook.js",
+    "logbook.json",
+    "pages/claims/page.md",
+    "pages/conclusion/page.md",
+    "pages/evidence/page.md",
+    "pages/index.md",
+    "pages/overview/page.md",
+    "pages/verification-run/page.md",
+    "style.css",
+    "trackio-logo-light.png",
+    "trackio-logo.png",
+    "trackio-wordmark-dark.png"
+  ],
+  "overlaid_historical_hash_match": {
+    "README.md": true,
+    "logbook.json": true,
+    "pages/index.md": true
+  },
+  "overlaid_protected_files": [
+    "README.md",
+    "logbook.json",
+    "pages/index.md"
+  ],
+  "schema": "protected-space-subset-check-v1",
+  "space_id": "DineshAI/hwhvjhXC0m",
+  "unchanged_at_original_path": {
+    ".gitattributes": true,
+    "README.md": false,
+    "bucket-icon.svg": true,
+    "index.html": true,
+    "logbook.css": true,
+    "logbook.js": true,
+    "logbook.json": false,
+    "pages/claims/page.md": true,
+    "pages/conclusion/page.md": true,
+    "pages/evidence/page.md": true,
+    "pages/index.md": false,
+    "pages/overview/page.md": true,
+    "pages/verification-run/page.md": true,
+    "style.css": true,
+    "trackio-logo-light.png": true,
+    "trackio-logo.png": true,
+    "trackio-wordmark-dark.png": true
+  }
+}

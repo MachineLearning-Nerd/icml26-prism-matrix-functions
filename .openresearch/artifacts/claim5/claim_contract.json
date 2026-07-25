@@ -1,0 +1,11 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 5,
+  "paper_anchor": "Section 6.2, Figure 6, Appendix E.2",
+  "exact_statement_under_test": "On the authors' 200M-FineWeb-token run of a 10-layer, 16-head, width-1024 GPT-style model with Muon, PRISM5 reports validation loss 5.0251 versus 5.4523 for PolarExpress and 6.8689 for AdamW.",
+  "source_correction": "Appendix E.2 says PRISM5 used three matrix iterations with alpha=29/20 for the initial three; the imported five-iteration wording is not the paper's protocol.",
+  "quantifier": "The particular unpublished author training run.",
+  "resolution_rule": "VERIFIED only by reproducing the exact training/data protocol or authentic raw artifacts; FALSIFIED only by an assumption-matching counterexample to that particular run.",
+  "verdict": "BLOCKED",
+  "confidence": "LOW"
+}

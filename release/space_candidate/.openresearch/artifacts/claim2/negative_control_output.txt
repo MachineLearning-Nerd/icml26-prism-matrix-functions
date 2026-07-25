@@ -1,0 +1,4 @@
+INDEPENDENT_CHECK={"A_squared_symmetric": true, "alpha_half_is_unique_minimizer": false, "is_counterexample": false, "spectral_norm_A": 1, "theorem_1_k2_actual": 0, "theorem_1_k2_bound": 2, "theorem_2_k3_actual": 0, "theorem_2_k3_bound": 2, "trajectory": [0, 0, 0, 0]}
+NOT_A_COUNTEREXAMPLE
+EXIT_CODE=5
+EXPECTED_NONZERO_EXIT=true

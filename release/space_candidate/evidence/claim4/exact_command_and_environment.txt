@@ -1,0 +1,8 @@
+Fixed command:
+uv run --frozen --python 3.11 python repro/src/run_reproduction.py
+
+Environment: Python 3.11; dependencies pinned by repository pyproject.toml and uv.lock.
+Backend: Hugging Face cpu-upgrade; image ghcr.io/astral-sh/uv:python3.11-bookworm-slim.
+Pre-run estimate: 6 CPU workers, 2-3 minutes.
+Actual cumulative runner: 64 logical CPUs visible, 248.76287212700117 seconds.
+Run: e4e9a9cb-ecf6-4b09-8115-f75845800d12. Git: 8fcf992.

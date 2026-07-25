@@ -1,0 +1,2 @@
+CLAIM6_FALSIFICATION_NEGATIVE_CONTROL={"candidate": "matrix with an exact zero singular value", "contradicts_convergence": true, "satisfies_HTMP_positive_support": false, "schema": "claim6-falsification-negative-control-v1", "valid_falsification": false}
+EXIT_CODE=9

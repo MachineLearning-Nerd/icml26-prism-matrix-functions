@@ -1,0 +1,2 @@
+CLAIM6_FALSIFICATION_INDEPENDENT_CHECK={"all_checks_pass": true, "checks": {"amplification_exact": true, "assumption_violation_recorded": true, "blocked_not_falsified": true, "horizon_bound_exact": true, "initial_bound_exact": true, "nonconvergence_proved_for_candidate": true, "source_not_universal": true}, "schema": "claim6-falsification-independent-check-v1"}
+EXIT_CODE=0

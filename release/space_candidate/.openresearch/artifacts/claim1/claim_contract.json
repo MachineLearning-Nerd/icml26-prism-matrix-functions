@@ -1,0 +1,24 @@
+{
+  "claim": 1,
+  "paper_anchor": "Section 3 Part II; Section 4.1 Equations (2)-(3); Table 1; Appendix A.1",
+  "exact_statement_under_test": "For fifth-order polar Newton-Schulz, PRISM uses g_2(R;alpha)=I+(1/2)R+alpha R^2, chooses alpha in [3/8,29/20] by minimizing the next residual Frobenius norm over the eigenvalues of R=I-X^T X, and does not require an explicit singular-value interval for A.",
+  "domain": {
+    "matrix_families": ["real Gaussian", "HTMP beta-Laguerre"],
+    "paper_dimensions": [
+      [15000, 15000],
+      [20000, 5000],
+      [100000, 2000],
+      [8000, 4000]
+    ],
+    "seeds": [202601, 202602, 202603],
+    "alpha_interval": ["3/8", "29/20"]
+  },
+  "machine_checks": [
+    "The implementation contains the exact named residual polynomial.",
+    "Every selected alpha is a global minimizer candidate of the quartic loss and is no worse than a 1001-point independent grid to tolerance 1e-8.",
+    "At least four distinct alpha trajectories occur across the six distributions and three seeds.",
+    "No minimum or maximum singular value is supplied to the PRISM alpha fit."
+  ],
+  "failure_behavior": "The verifier exits nonzero if polynomial-fit optimality or spectrum adaptation checks fail.",
+  "scope": "Direct full-dimension mechanism verification in singular-value coordinates; dense arithmetic is checked in a separate experiment."
+}

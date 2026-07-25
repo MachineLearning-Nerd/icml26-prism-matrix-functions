@@ -1,0 +1,2 @@
+TRAINING_CLAIMS_NEGATIVE_CONTROL={"mutated_contract_rejected": true, "mutation": "claim PRISM5 used five iterations in the language-model run", "paper_actual_PRISM5_iterations": 3, "schema": "training-claim-contract-negative-control-v1"}
+EXIT_CODE=9

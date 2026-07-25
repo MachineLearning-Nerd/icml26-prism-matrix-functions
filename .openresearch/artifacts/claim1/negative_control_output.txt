@@ -1,0 +1,2 @@
+DENSE_NEGATIVE_CONTROL={"distinct_profiles": 1, "mutation": "replace the fitted coefficient by constant 3/8", "required_distinct_profiles": 4, "schema": "prism-fixed-alpha-negative-control-v2"}
+EXIT_CODE=7

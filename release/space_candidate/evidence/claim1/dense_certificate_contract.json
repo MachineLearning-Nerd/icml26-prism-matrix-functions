@@ -1,0 +1,23 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 1,
+  "route": "direct dense mechanism certificate",
+  "algorithm": "X_next = X(I + 1/2 R + alpha R^2), R = I - X^T X",
+  "alpha_bounds": [0.375, 1.45],
+  "conditions": {
+    "gaussian_shapes": [[128, 128], [256, 64], [800, 16]],
+    "power_law_spectrum_exponents": [0.5, 1.0, 2.0],
+    "seeds": [202601, 202602],
+    "iterations": 5
+  },
+  "primary": "bounded scalar minimization of the direct dense next-residual loss",
+  "independent_checker": "global quartic solution constructed from residual-matrix eigenvalues",
+  "acceptance": [
+    "at least 12 identifiable comparisons",
+    "identifiable alpha difference <= 1e-5",
+    "all dense objectives attain the independent optimum within mixed tolerance",
+    "next-error difference <= 1e-7",
+    "at least four distinct alpha profiles",
+    "every sample improves"
+  ]
+}

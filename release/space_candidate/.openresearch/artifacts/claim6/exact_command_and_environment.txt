@@ -1,0 +1,12 @@
+Fixed command:
+uv run --frozen --python 3.11 python repro/src/run_reproduction.py
+
+Environment:
+pyproject.toml and uv.lock committed at the experiment Git SHA.
+Python 3.11 from .python-version.
+
+Planned compute:
+backend=hf
+flavor=cpu-upgrade
+estimated useful cores before launch=6
+actual allocation and runtime are emitted by the fixed command.

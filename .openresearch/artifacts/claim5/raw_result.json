@@ -1,0 +1,22 @@
+{
+  "schema": "claim5-four-route-summary-v1",
+  "claim": 5,
+  "verdict": "BLOCKED",
+  "confidence": "LOW",
+  "routes_completed": 4,
+  "paper_validation_losses": {
+    "PRISM5": 5.0251,
+    "PolarExpress": 5.4523,
+    "AdamW": 6.8689
+  },
+  "paper_PRISM5_matrix_iterations": 3,
+  "public_exact_training_code_found": false,
+  "paper_archive_executable_count": 0,
+  "paper_archive_raw_data_count": 0,
+  "fastest_observed_optimistic_cpu_lower_bound_days": 7.906944612058237,
+  "latest_cumulative_run_id": "e4e9a9cb-ecf6-4b09-8115-f75845800d12",
+  "latest_route_exit_code": 8,
+  "independent_checker_exit_code": 0,
+  "negative_control_exit_code": 9,
+  "valid_falsification": false
+}

@@ -1,0 +1,28 @@
+{
+  "arxiv_id": "2601.22137v1",
+  "retrieved_at": "2026-07-24T14:49:16Z",
+  "user_agent": "OpenResearch-Reproduction/1.0 (contact: local-user; paper 2601.22137)",
+  "sources": [
+    {
+      "url": "https://ar5iv.labs.arxiv.org/html/2601.22137",
+      "sha256": "9876b930c97063af87fbfc8eb51e577920d2047d76abd4f71c1f63570b9a4866",
+      "bytes": 851855
+    },
+    {
+      "url": "https://arxiv.org/pdf/2601.22137",
+      "sha256": "e7e26b20f70e783fda405454e15a236a2a4c323fcf848e63d29290e2a77f60b8",
+      "bytes": 2430084
+    }
+  ],
+  "anchors": {
+    "meta_algorithm": "S3",
+    "matrix_sign_case_study": "S4",
+    "theorem_1": "Thmtheorem1",
+    "theorem_2": "Thmtheorem2",
+    "experiments": "S6",
+    "shampoo_and_muon": "S6.SS2",
+    "experimental_details": "Sx3",
+    "theorem_1_proof": "Sx2.SS2",
+    "theorem_2_proof": "Sx2.SS3"
+  }
+}

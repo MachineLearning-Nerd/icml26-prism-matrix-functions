@@ -1,0 +1,23 @@
+{
+  "entrypoint": "README.md",
+  "files_opened": [
+    "README.md",
+    "pages/current-verification/page.md",
+    "pages/claim-1/page.md",
+    "pages/claim-2/page.md",
+    "pages/claim-3/page.md",
+    "pages/claim-4/page.md",
+    "pages/claim-5/page.md",
+    "pages/claim-6/page.md",
+    "evidence/claim1/raw_result.json",
+    "evidence/claim2/raw_result.json",
+    "evidence/claim3/raw_result.json",
+    "evidence/claim4/raw_result.json",
+    "evidence/claim5/raw_result.json",
+    "evidence/claim6/raw_result.json",
+    "pages/release-report/page.md"
+  ],
+  "hidden_project_evidence_used": false,
+  "missing": [],
+  "schema": "evaluator-visible-traversal-v1"
+}

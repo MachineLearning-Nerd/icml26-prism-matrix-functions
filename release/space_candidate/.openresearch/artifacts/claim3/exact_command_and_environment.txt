@@ -1,0 +1,9 @@
+FIXED_COMMAND=uv run --frozen --python 3.11 python repro/src/run_reproduction.py
+PYTHON_CONSTRAINT=>=3.11,<3.12
+LOCKFILE=uv.lock
+BACKEND=local
+FLAVOR=none
+IMAGE=host
+ESTIMATED_USEFUL_CORES=1
+GPU_USED=false
+SEED=none

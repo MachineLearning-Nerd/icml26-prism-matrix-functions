@@ -1,0 +1,23 @@
+{
+  "schema": "claim1-dense-certificate-summary-v1",
+  "claim": 1,
+  "verdict": "VERIFIED",
+  "run_id": "e4e9a9cb-ecf6-4b09-8115-f75845800d12",
+  "commit_sha": "8fcf992",
+  "seeds": [202601, 202602],
+  "sample_count": 12,
+  "state_count": 60,
+  "identifiable_row_count": 52,
+  "distinct_alpha_profiles": 9,
+  "maximum_identifiable_alpha_difference": 1.8113822664034274e-08,
+  "maximum_next_error_difference": 8.881784197001252e-16,
+  "all_dense_objectives_match_checker": true,
+  "all_samples_improved": true,
+  "uses_explicit_spectral_bound": false,
+  "runner_runtime_seconds": 248.76287212700117,
+  "job_duration_seconds": 287,
+  "estimated_worker_cores": 6,
+  "actual_logical_cpu_allocation": 64,
+  "backend": "hf",
+  "flavor": "cpu-upgrade"
+}

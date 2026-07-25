@@ -1,0 +1,7 @@
+CLAIM1_DENSE_INDEPENDENT_CHECK=PASS
+identifiable_row_count=52
+maximum_identifiable_alpha_difference=1.8113822664034274e-08
+maximum_next_error_difference=8.881784197001252e-16
+all_dense_objectives_match_checker=true
+all_samples_improved=true
+verdict=VERIFIED

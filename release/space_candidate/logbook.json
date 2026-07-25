@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "title": "Repro - PRISM: Distribution-free Adaptive Computation of Matrix Functions",
+  "emoji": "🎯",
+  "space_id": "DineshAI/hwhvjhXC0m",
+  "paper": "arXiv:2601.22137",
+  "tags": [
+    "icml2026-repro",
+    "paper-hwhvjhXC0m"
+  ],
+  "updated_at": "2026-07-25T00:00:00+05:30",
+  "root": {
+    "slug": "index",
+    "title": "PRISM claim-by-claim reproduction",
+    "file": "pages/index.md",
+    "children": [
+      {
+        "slug": "current-verification",
+        "title": "Current verification",
+        "file": "pages/current-verification/page.md",
+        "children": [
+          {"slug": "claim-1", "title": "Claim 1 — VERIFIED", "file": "pages/claim-1/page.md", "children": []},
+          {"slug": "claim-2", "title": "Claim 2 — FALSIFIED", "file": "pages/claim-2/page.md", "children": []},
+          {"slug": "claim-3", "title": "Claim 3 — FALSIFIED", "file": "pages/claim-3/page.md", "children": []},
+          {"slug": "claim-4", "title": "Claim 4 — BLOCKED", "file": "pages/claim-4/page.md", "children": []},
+          {"slug": "claim-5", "title": "Claim 5 — BLOCKED", "file": "pages/claim-5/page.md", "children": []},
+          {"slug": "claim-6", "title": "Claim 6 — BLOCKED", "file": "pages/claim-6/page.md", "children": []}
+        ]
+      },
+      {
+        "slug": "release-report",
+        "title": "Release report",
+        "file": "pages/release-report/page.md",
+        "children": []
+      },
+      {
+        "slug": "red-team",
+        "title": "Evaluator-blind review",
+        "file": "pages/red-team/page.md",
+        "children": []
+      },
+      {
+        "slug": "overview",
+        "title": "Historical rejected baseline — Overview",
+        "file": "pages/overview/page.md",
+        "children": []
+      },
+      {
+        "slug": "claims",
+        "title": "Historical rejected baseline — Claims",
+        "file": "pages/claims/page.md",
+        "children": []
+      },
+      {
+        "slug": "evidence",
+        "title": "Historical rejected baseline — Evidence",
+        "file": "pages/evidence/page.md",
+        "children": []
+      },
+      {
+        "slug": "verification-run",
+        "title": "Historical rejected baseline — Verification run",
+        "file": "pages/verification-run/page.md",
+        "children": []
+      },
+      {
+        "slug": "conclusion",
+        "title": "Historical rejected baseline — Conclusion",
+        "file": "pages/conclusion/page.md",
+        "children": []
+      }
+    ]
+  },
+  "agent_view_tokens": 8000,
+  "revision": "candidate-8fcf992"
+}

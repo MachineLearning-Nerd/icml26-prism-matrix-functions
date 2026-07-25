@@ -1,0 +1,2 @@
+TRAINING_CLAIMS_INDEPENDENT_CHECK claim5={"blocked": true, "not_falsified": true, "unblocker_concrete": true, "exactly_four_routes": true}
+EXIT_CODE=0

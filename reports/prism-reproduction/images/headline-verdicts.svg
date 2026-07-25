@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420">
+  <rect width="960" height="420" fill="#0b1020"/>
+  <text x="48" y="54" fill="#f8fafc" font-family="sans-serif" font-size="26" font-weight="700">Claim-level outcome after faithful audits</text>
+  <text x="48" y="84" fill="#94a3b8" font-family="sans-serif" font-size="16">Full credit is claimed only for direct verification or an assumption-satisfying falsification.</text>
+  <g font-family="sans-serif" font-size="18" text-anchor="middle">
+    <rect x="48" y="125" width="130" height="180" rx="10" fill="#0f766e"/>
+    <text x="113" y="168" fill="white" font-size="22" font-weight="700">Claim 1</text>
+    <text x="113" y="216" fill="white">VERIFIED</text>
+    <text x="113" y="250" fill="#ccfbf1">HIGH</text>
+    <rect x="194" y="125" width="130" height="180" rx="10" fill="#b45309"/>
+    <text x="259" y="168" fill="white" font-size="22" font-weight="700">Claim 2</text>
+    <text x="259" y="216" fill="white">FALSIFIED</text>
+    <text x="259" y="250" fill="#fef3c7">HIGH</text>
+    <rect x="340" y="125" width="130" height="180" rx="10" fill="#b45309"/>
+    <text x="405" y="168" fill="white" font-size="22" font-weight="700">Claim 3</text>
+    <text x="405" y="216" fill="white">FALSIFIED</text>
+    <text x="405" y="250" fill="#fef3c7">HIGH</text>
+    <rect x="486" y="125" width="130" height="180" rx="10" fill="#475569"/>
+    <text x="551" y="168" fill="white" font-size="22" font-weight="700">Claim 4</text>
+    <text x="551" y="216" fill="white">BLOCKED</text>
+    <text x="551" y="250" fill="#e2e8f0">LOW</text>
+    <rect x="632" y="125" width="130" height="180" rx="10" fill="#475569"/>
+    <text x="697" y="168" fill="white" font-size="22" font-weight="700">Claim 5</text>
+    <text x="697" y="216" fill="white">BLOCKED</text>
+    <text x="697" y="250" fill="#e2e8f0">LOW</text>
+    <rect x="778" y="125" width="130" height="180" rx="10" fill="#475569"/>
+    <text x="843" y="168" fill="white" font-size="22" font-weight="700">Claim 6</text>
+    <text x="843" y="216" fill="white">BLOCKED</text>
+    <text x="843" y="250" fill="#e2e8f0">LOW</text>
+  </g>
+  <text x="48" y="355" fill="#f8fafc" font-family="sans-serif" font-size="19" font-weight="700">Live score remains 5/12</text>
+  <text x="48" y="385" fill="#94a3b8" font-family="sans-serif" font-size="16">Conservative forecast: 5–8/12. This is not a judge result.</text>
+</svg>

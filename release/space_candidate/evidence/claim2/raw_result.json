@@ -1,8 +1,39 @@
 {
+  "schema": "prism-stated-domain-counterexample-v1",
+  "verdict": "FALSIFIED",
   "matrix_A": [[0, -1], [1, 0]],
-  "A_squared": [[-1, 0], [0, -1]],
-  "spectral_norm_A": 1,
-  "residual_norms": [2, 5, 50, 33125],
-  "theorem_1": {"k": 2, "actual": 50, "bound": 2, "verdict": "FALSIFIED"},
-  "theorem_2": {"k": 3, "actual": 33125, "bound": 2, "failure_probability": 1, "delta": 0.1, "verdict": "FALSIFIED"}
+  "assumptions": {
+    "dimension": 2,
+    "spectral_norm_A": 1,
+    "spectral_norm_positive": true,
+    "spectral_norm_at_most_one": true,
+    "A_squared": [[-1, 0], [0, -1]],
+    "A_squared_symmetric": true,
+    "degree": 1,
+    "alpha_interval": ["1/2", "1"]
+  },
+  "alpha_star_each_checked_step": "1/2",
+  "residual_spectral_norms": [2, 5, 50, 33125],
+  "theorem_1": {
+    "checked_k": 2,
+    "actual": 50,
+    "claimed_bound": 2,
+    "contradiction": true,
+    "verdict": "FALSIFIED"
+  },
+  "theorem_2": {
+    "checked_k": 3,
+    "statement_p_min": 1522,
+    "actual": 33125,
+    "claimed_bound": 2,
+    "failure_probability": 1.0,
+    "allowed_failure_probability": 0.1,
+    "contradiction": true,
+    "verdict": "FALSIFIED"
+  },
+  "non_circularity": {
+    "formula_derived_sample_used_as_evidence": false,
+    "sampled_sketch_used_as_evidence": false,
+    "reason": "For R=rI, the sketched objective is |h(r,alpha)| times ||S||_F, so every nonzero sketch has the same minimizer. A Gaussian sketch is nonzero almost surely."
+  }
 }

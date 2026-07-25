@@ -1,0 +1,10 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 4,
+  "paper_anchor": "Section 6.2, Figure 5, Appendix E.1",
+  "exact_statement_under_test": "For the authors' first-50-epoch Shampoo runs, PRISM with five matrix iterations matches or outperforms exact eigendecomposition in wall-clock time on the modified stride-one ResNet-20/CIFAR-10 and ResNet-32/CIFAR-100 tasks.",
+  "quantifier": "The particular two unpublished author training runs and timing protocol.",
+  "resolution_rule": "VERIFIED only by reproducing the specified training/timing protocol or by authentic raw artifacts; FALSIFIED only by an assumption-matching counterexample to that particular comparison.",
+  "verdict": "BLOCKED",
+  "confidence": "LOW"
+}

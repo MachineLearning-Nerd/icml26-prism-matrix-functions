@@ -1,0 +1,20 @@
+{
+  "schema": "claim4-four-route-summary-v1",
+  "claim": 4,
+  "verdict": "BLOCKED",
+  "confidence": "LOW",
+  "routes_completed": 4,
+  "paper_result": "PRISM-5 matches or outperforms exact eigendecomposition in first-50-epoch wall-clock time.",
+  "public_exact_integration_found": false,
+  "paper_archive_executable_count": 0,
+  "paper_archive_raw_data_count": 0,
+  "fastest_observed_optimistic_lower_bounds_seconds": {
+    "smaller_resnet20_without_shampoo": 16537.608753424138,
+    "smaller_resnet32_without_shampoo": 27412.094932515174
+  },
+  "latest_cumulative_run_id": "e4e9a9cb-ecf6-4b09-8115-f75845800d12",
+  "latest_route_exit_code": 8,
+  "independent_checker_exit_code": 0,
+  "negative_control_exit_code": 9,
+  "valid_falsification": false
+}

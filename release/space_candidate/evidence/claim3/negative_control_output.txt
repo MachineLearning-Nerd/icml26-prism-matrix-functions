@@ -1,0 +1,3 @@
+The matrix diag(1,-1) has zero residual at every iteration.
+The independent checker returns EXIT_CODE=5 and NOT_A_COUNTEREXAMPLE.
+EXPECTED_NONZERO_EXIT=true

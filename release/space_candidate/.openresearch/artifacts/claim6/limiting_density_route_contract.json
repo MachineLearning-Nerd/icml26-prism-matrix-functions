@@ -1,0 +1,13 @@
+{
+  "schema": "claim-contract-v1",
+  "claim": 6,
+  "route": "limiting HTMP density reconstruction",
+  "source_equation": "Hodgkinson et al. (2025), arXiv:2506.03470, Eq. E.5",
+  "paper_dimensions": [8000, 4000],
+  "gamma": 0.5,
+  "kappas": [0.1, 0.5, 100.0],
+  "quantile_rule": "4000 deterministic midpoint quantiles",
+  "horizon": 32,
+  "acceptance": "The Eq. E.5 density integrates to 1 within 2%, and PRISM first hits fall in every predeclared Figure D.2 marker bracket.",
+  "failure": "A density-integral failure invalidates the implementation. A curve mismatch rejects this route as a reproduction of the paper generator."
+}

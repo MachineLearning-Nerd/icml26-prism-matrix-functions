@@ -1,0 +1,39 @@
+{
+  "schema": "claim6-four-route-summary-v1",
+  "claim": 6,
+  "verdict": "BLOCKED",
+  "confidence": "LOW",
+  "run_id": "e4e9a9cb-ecf6-4b09-8115-f75845800d12",
+  "commit_sha": "8fcf992",
+  "routes": [
+    {
+      "route": 1,
+      "name": "calibrated finite sampler mappings",
+      "result": "No tested parameter mapping reproduced all six published first-hit anchors."
+    },
+    {
+      "route": 2,
+      "name": "limiting HTMP density",
+      "result": "At kappa=0.1 the midpoint spectrum retained Frobenius error 9.195665798079629 at iteration 32."
+    },
+    {
+      "route": 3,
+      "name": "arXiv archive recovery",
+      "result": "50 files and four plot hashes recovered; no executable, raw curve data, or seed."
+    },
+    {
+      "route": 4,
+      "name": "mandatory falsification",
+      "result": "Candidate contradicts a universalized stability statement but not the exact particular-experiment quantifier."
+    }
+  ],
+  "falsification_candidate_satisfies_every_source_assumption": false,
+  "valid_falsification": false,
+  "archive_sha256": "2567d8a2378a09a18f1bd8dbd645a5785a1a2bd89af5458c1410a0b383483e4d",
+  "independent_checker_passed": true,
+  "negative_control_exit_code": 9,
+  "runner_runtime_seconds": 248.76287212700117,
+  "actual_logical_cpu_allocation": 64,
+  "backend": "hf",
+  "flavor": "cpu-upgrade"
+}

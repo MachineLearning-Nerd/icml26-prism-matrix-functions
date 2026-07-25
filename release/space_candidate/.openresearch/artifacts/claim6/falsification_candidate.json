@@ -1,0 +1,25 @@
+{
+  "schema": "claim6-falsification-candidate-v1",
+  "source_statement": "Automatically adapting to the input spectra allows PRISM to converge the fastest in our experiments.",
+  "source_quantifier": "particular unpublished experiments",
+  "candidate": "deterministic midpoint quantiles of HTMP Eq. E.5 at gamma=0.5, kappa=0.1, m=4000",
+  "candidate_run_id": "b9dc5832-7883-4ad0-8701-a3fdbe387d6e",
+  "minimum_midpoint_eigenvalue": 4.91038285729026e-72,
+  "maximum_midpoint_eigenvalue": 52.65631250687386,
+  "horizon": 32,
+  "maximum_step_amplification": 2.95,
+  "normalized_minimum_singular_upper_bound": 3.0537428015914264e-37,
+  "singular_upper_bound_at_horizon": 3.304737492267246e-22,
+  "observed_error_fro_at_horizon": 9.195665798079629,
+  "assumptions": {
+    "dimensions_8000_by_4000": true,
+    "kappa_0.1": true,
+    "named_limiting_density": true,
+    "alpha_bounds": true,
+    "same_unpublished_random_draw": false,
+    "A100_wall_clock": false
+  },
+  "contradicts_universalized_claim": true,
+  "valid_falsification_of_exact_source_statement": false,
+  "verdict": "BLOCKED"
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "prism-theorem2-counterexample-v1",
+  "matrix_A": [[0, -1], [1, 0]],
+  "n": 2,
+  "delta": 0.1,
+  "k": 3,
+  "printed_p_min": 1522,
+  "alpha_star_almost_surely": "1/2",
+  "actual_residual_norm": 33125,
+  "claimed_bound": 2,
+  "failure_probability": 1.0,
+  "verdict": "FALSIFIED"
+}
