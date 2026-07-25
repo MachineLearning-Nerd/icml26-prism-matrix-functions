@@ -73,6 +73,19 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    claim6_falsification = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/claim6_falsification_audit.py")]
+    )
+    claim6_falsification_checker = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/check_claim6_falsification.py")]
+    )
+    claim6_falsification_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/claim6_falsification_audit.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -82,8 +95,11 @@ def main() -> int:
         and spectral_negative.returncode != 0
         and dense.returncode == 0
         and dense_negative.returncode != 0
-        and archive_audit.returncode == 0
+        and archive_audit.returncode == 8
         and archive_audit_negative.returncode != 0
+        and claim6_falsification.returncode == 8
+        and claim6_falsification_checker.returncode == 0
+        and claim6_falsification_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -111,6 +127,14 @@ def main() -> int:
         "archive_audit_negative_control_exit_code": archive_audit_negative.returncode,
         "archive_audit_negative_control_failed_as_intended": (
             archive_audit_negative.returncode != 0
+        ),
+        "claim6_falsification_exit_code": claim6_falsification.returncode,
+        "claim6_falsification_checker_exit_code": claim6_falsification_checker.returncode,
+        "claim6_falsification_negative_control_exit_code": (
+            claim6_falsification_negative.returncode
+        ),
+        "claim6_falsification_negative_control_failed_as_intended": (
+            claim6_falsification_negative.returncode != 0
         ),
         "cumulative_suite_passed": suite_ok,
     }
