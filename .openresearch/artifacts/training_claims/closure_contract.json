@@ -1,0 +1,27 @@
+{
+  "schema": "training-claims-closure-contract-v1",
+  "completed_routes": [1, 2, 3, 4],
+  "mandatory_falsification_after": 3,
+  "claim4": {
+    "verdict": "BLOCKED",
+    "confidence": "LOW",
+    "valid_falsification": false,
+    "unblockers": [
+      "exact enlarged ResNet-20 and ResNet-32 definitions",
+      "PRISM-to-Distributed-Shampoo integration revision",
+      "training seed and complete data protocol",
+      "raw accuracy/time trajectories and original timing protocol"
+    ]
+  },
+  "claim5": {
+    "verdict": "BLOCKED",
+    "confidence": "LOW",
+    "valid_falsification": false,
+    "unblockers": [
+      "exact 10-layer GPT model and optimizer implementation",
+      "FineWeb snapshot, token order, and validation split",
+      "training seed, schedule, and hardware topology",
+      "checkpoints and raw training/validation trajectories"
+    ]
+  }
+}

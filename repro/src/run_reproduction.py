@@ -86,6 +86,19 @@ def main() -> int:
             "--negative-control",
         ]
     )
+    training_closure = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/training_claims_closure.py")]
+    )
+    training_closure_checker = run_and_echo(
+        [sys.executable, str(ROOT / "repro/src/check_training_claims_closure.py")]
+    )
+    training_closure_negative = run_and_echo(
+        [
+            sys.executable,
+            str(ROOT / "repro/src/training_claims_closure.py"),
+            "--negative-control",
+        ]
+    )
     suite_ok = (
         historical.returncode == 0
         and primary.returncode == 0
@@ -100,6 +113,9 @@ def main() -> int:
         and claim6_falsification.returncode == 8
         and claim6_falsification_checker.returncode == 0
         and claim6_falsification_negative.returncode != 0
+        and training_closure.returncode == 8
+        and training_closure_checker.returncode == 0
+        and training_closure_negative.returncode != 0
     )
     metadata = {
         "schema": "prism-run-metadata-v1",
@@ -135,6 +151,12 @@ def main() -> int:
         ),
         "claim6_falsification_negative_control_failed_as_intended": (
             claim6_falsification_negative.returncode != 0
+        ),
+        "training_closure_exit_code": training_closure.returncode,
+        "training_closure_checker_exit_code": training_closure_checker.returncode,
+        "training_closure_negative_control_exit_code": training_closure_negative.returncode,
+        "training_closure_negative_control_failed_as_intended": (
+            training_closure_negative.returncode != 0
         ),
         "cumulative_suite_passed": suite_ok,
     }
