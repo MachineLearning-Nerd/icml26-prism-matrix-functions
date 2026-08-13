@@ -1,5 +1,10 @@
 # Evidence
 
+> **ARCHIVED REJECTED BASELINE.** The output below is from the former 6×6
+> toy/proxy verifier. It is not the current claim evidence and must not be
+> read as full-scale verification. See [Current verification](#/current-verification)
+> for the fail-closed claim ledger.
+
 
 ---
 <!-- trackio-cell

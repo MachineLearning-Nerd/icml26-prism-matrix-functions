@@ -110,10 +110,10 @@ evidence or an assumption-violating substitute into a pass.
 
 Important branches:
 
-- [`orx/stated-domain-theorem-counterexamples`](https://github.com/MachineLearning-Nerd/icml26-repro-hwhvjhXC0m-prism-matrix-functions/tree/orx/stated-domain-theorem-counterexamples)
-- [`orx/efficient-dense-prism-mechanism-certificate`](https://github.com/MachineLearning-Nerd/icml26-repro-hwhvjhXC0m-prism-matrix-functions/tree/orx/efficient-dense-prism-mechanism-certificate)
-- [`orx/claims-4-and-5-four-route-closure`](https://github.com/MachineLearning-Nerd/icml26-repro-hwhvjhXC0m-prism-matrix-functions/tree/orx/claims-4-and-5-four-route-closure)
-- [`orx/integrated-evaluator-visible-candidate`](https://github.com/MachineLearning-Nerd/icml26-repro-hwhvjhXC0m-prism-matrix-functions/tree/orx/integrated-evaluator-visible-candidate)
+- [`research/stated-domain-theorem-counterexamples`](https://github.com/MachineLearning-Nerd/icml26-prism-matrix-functions/tree/research/stated-domain-theorem-counterexamples)
+- [`research/efficient-dense-prism-mechanism-certificate`](https://github.com/MachineLearning-Nerd/icml26-prism-matrix-functions/tree/research/efficient-dense-prism-mechanism-certificate)
+- [`research/claims-4-and-5-four-route-closure`](https://github.com/MachineLearning-Nerd/icml26-prism-matrix-functions/tree/research/claims-4-and-5-four-route-closure)
+- [`research/integrated-evaluator-visible-candidate`](https://github.com/MachineLearning-Nerd/icml26-prism-matrix-functions/tree/research/integrated-evaluator-visible-candidate)
 
 ## Assessment
 

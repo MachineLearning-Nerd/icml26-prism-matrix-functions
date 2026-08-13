@@ -1,9 +1,11 @@
-"""Verify PRISM claims (arXiv 2601.22137). numpy, CPU."""
+"""Historical rejected toy verifier; excluded from the current reproduction gate."""
 from __future__ import annotations
 import json, os, sys
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
 import prism as P
+
+print("HISTORICAL_REJECTED_BASELINE: this toy/proxy verifier is not current evidence")
 
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "outputs")
 os.makedirs(OUT, exist_ok=True)

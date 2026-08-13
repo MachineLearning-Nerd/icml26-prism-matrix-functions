@@ -7,7 +7,13 @@
 -->
 ## Executive summary
 
-6/6 claim checks PASS for **PRISM: Distribution-free Adaptive Computation of Matrix Functions** (`hwhvjhXC0m`). Clean-room numpy verification on CPU (<1 min, <100 MB). Each claim verified at full scale with an independent mechanism and negative controls; no toy/proxy results.
+> **ARCHIVED REJECTED BASELINE.** The original snapshot reported 6/6 checks
+> from a toy/proxy verifier. That result was not a paper-level reproduction.
+
+The current audit has a split result: Claim 1 is `VERIFIED_SCOPED`; Claims 2–3
+are `FALSIFIED_AS_PRINTED` on an exact stated-domain counterexample; and Claims
+4–6 are `BLOCKED` because the published artifacts do not identify the exact
+training and robustness runs. The strict publication gate is not passed.
 
 ## Scope & cost
 

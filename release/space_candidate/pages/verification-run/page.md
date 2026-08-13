@@ -1,5 +1,10 @@
 # Verification run
 
+> **ARCHIVED REJECTED BASELINE.** This page records the former
+> `verify_prism.py` toy/proxy run. It is retained for lineage only; the current
+> runner is `repro/src/run_reproduction.py` and its claim-level results are
+> under [Current verification](#/current-verification).
+
 
 ---
 <!-- trackio-cell

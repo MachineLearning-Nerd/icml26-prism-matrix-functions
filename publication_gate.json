@@ -1,8 +1,21 @@
 {
-  "paper": "hwhvjhXC0m",
-  "tests_passed": true,
-  "publication_gate_passed": true,
-  "claims_verified": 6,
+  "paper_arxiv": "2601.22137v1",
+  "paper_openreview": "hwhvjhXC0m",
+  "status": "INCONCLUSIVE",
+  "publication_gate_passed": false,
   "claims_total": 6,
-  "arxiv": "2601.22137"
+  "scoped_claims": {
+    "claim_1": "VERIFIED_SCOPED",
+    "claim_2": "FALSIFIED_AS_PRINTED",
+    "claim_3": "FALSIFIED_AS_PRINTED",
+    "claim_4": "BLOCKED",
+    "claim_5": "BLOCKED",
+    "claim_6": "BLOCKED"
+  },
+  "authoritative_evidence": "release/space_candidate",
+  "reasons": [
+    "The current runner must not treat the historical toy/proxy verifier as paper-level evidence.",
+    "Theorem 1 and Theorem 2 fail on one exact matrix satisfying the printed assumptions.",
+    "The Shampoo, Muon/GPT, and Gaussian/HTMP experiments lack enough published operational detail for exact reproduction."
+  ]
 }

@@ -1,4 +1,4 @@
-"""Fixed experiment entrypoint with cumulative historical regression."""
+"""Fail-closed cumulative reproduction entrypoint for the current audit."""
 
 from __future__ import annotations
 
@@ -27,9 +27,6 @@ def run_and_echo(command: list[str]) -> subprocess.CompletedProcess[str]:
 
 def main() -> int:
     started = time.perf_counter()
-    historical = run_and_echo(
-        [sys.executable, str(ROOT / "repro/src/verify_prism.py")]
-    )
     primary = run_and_echo(
         [sys.executable, str(ROOT / "repro/src/theorem_counterexample.py")]
     )
@@ -100,8 +97,7 @@ def main() -> int:
         ]
     )
     suite_ok = (
-        historical.returncode == 0
-        and primary.returncode == 0
+        primary.returncode == 0
         and independent.returncode == 0
         and negative.returncode != 0
         and spectral.returncode == 0
@@ -127,7 +123,6 @@ def main() -> int:
         "platform": platform.platform(),
         "python": platform.python_version(),
         "runtime_seconds": time.perf_counter() - started,
-        "historical_verifier_exit_code": historical.returncode,
         "primary_verifier_exit_code": primary.returncode,
         "independent_checker_exit_code": independent.returncode,
         "negative_control_exit_code": negative.returncode,

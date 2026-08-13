@@ -10,4 +10,11 @@
 OpenReview: https://openreview.net/forum?id=hwhvjhXC0m
 arXiv: https://arxiv.org/abs/2601.22137
 
-Clean-room CPU reproduction. 6 anchored claims (12 possible points). All claims verified at full scale.
+> **ARCHIVED REJECTED BASELINE.** This page preserves the original 6×6
+> toy/proxy verifier that was rejected as paper-level evidence. It is retained
+> for provenance only and is superseded by [Current verification](#/current-verification).
+
+The current audit verifies the adaptive mechanism only within a scoped
+certificate, falsifies the two printed theorem guarantees on an exact stated-
+domain matrix, and leaves the Shampoo, Muon/GPT, and Gaussian/HTMP experiment
+claims `BLOCKED` because their operational artifacts are not public.
